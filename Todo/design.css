@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+:root {
+    --black: rgb(28, 28, 28);
+    --darkBlack: rgb(23, 22, 22);
+    --red: #BC312E;
+    --darkRed:rgb(191, 26, 23);
+}
+
+body {
+    background: linear-gradient(120deg, var(--black),var(--darkBlack));
+}
+
+.container {
+    width: 25rem;
+    min-height: 30rem;
+    height: auto;
+    background-color: var(--red);
+    border-radius: 1rem;
+    margin: 3rem auto;
+    padding: .5rem;
+}
+
+.top {
+    padding: 1rem;
+}
+
+.top>h1 {
+    text-align: center;
+    color: var(--black);
+    border-bottom: 1px solid;
+
+}
+
+.top> form > input {
+    width: 17rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem 0 0 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    color: var(--red);
+    background-color: var(--black);
+    font-size: 20px;
+}
+
+.top> form > button {
+    position: absolute;
+    top: 8rem;
+    margin-left: 2px;
+    width: 3rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    color: var(--red);
+    background-color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+    transition: 1ms ease-in-out;
+}
+
+.top> form > button:hover {
+    background-color: black;
+}
+
+.bottom>#listValue {
+    outline: none;
+    border: none;
+    background-color: var(--red);
+    color: var(--black);
+    font-size: 25px;
+    margin-left: 15px;
+    cursor:pointer;
+    text-decoration: none;
+
+}
+
+.bottom>#editBtn {
+    outline: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--red);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.bottom>#deleteBtn {
+    outline: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--red);
+    margin-left: 5px;
+    cursor: pointer;
+
+}
